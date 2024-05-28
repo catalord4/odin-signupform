@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kaisei+Opti&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0 20vw 0;
+  background-color: #ffffff;
+}
+#container {
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+aside {
+  width: 25vw;
+
+  background-image: url(imgs/background-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  #logo-overlay {
+    margin-top: 40%;
+    height: 17%;
+    width: 100%;
+    background-color: #323232;
+    opacity: 60%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    h1 {
+      color: white;
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
+
+    img {
+      height: 85%;
+      opacity: 100%;
+      color: white;
+    }
+  }
+}
+#content-container {
+  width: 35vw;
+}
+
+.dancing-script {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
