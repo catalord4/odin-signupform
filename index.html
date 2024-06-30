@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Sign Up Page</title>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div id="container">
@@ -17,27 +18,47 @@
 
       <div id="content-container">
         <main>
-          <h2 class="dancing-script">Travel with us to your dream vacation</h2>
-          <h2></h2>
-          <form action="">
-            <label for=""></label>
-            <input type="text" />
-            <label for=""></label>
-            <input type="text" />
-            <label for=""></label>
-            <input type="text" />
-            <label for=""></label>
-            <input type="text" />
-            <label for=""></label>
-            <input type="text" />
-            <label for=""></label>
-            <input type="text" />
+          <h2 class="dancing-script">
+            Travel with us to your dream destination
+          </h2>
+          <h2>
+            This is not a real online service! You know you need this vacation
+            to relax after all your hard work. Sign up now to get started
+            planning
+          </h2>
+          <form action="" id="form1">
+            <div class="input-container">
+              <label for="first-name"> FIRST NAME</label>
+              <input type="text" id="first-name" />
+            </div>
+            <div class="input-container">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" />
+            </div>
+            <div class="input-container">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" />
+            </div>
+            <div class="input-container">
+              <label for="phone">PHONE NUMBER</label>
+              <input type="number" id="phone" />
+            </div>
+            <div class="input-container">
+              <label for="password">PASSWORD </label>
+              <input type="password" id="password" required />
+              <p id="pass-notmatch">*Password's don't match</p>
+            </div>
+            <div class="input-container">
+              <label for="pass-confirm">CONFIRM PASSWORD</label>
+              <input type="text" id="pass-confirm" required />
+            </div>
           </form>
         </main>
-        <div>
-          <button></button>
-          <p></p>
-          <a></a>
+        <div id="button-container">
+          <button type="button" form="form1" class="roboto-medium">
+            Create Account
+          </button>
+          <p>Already have an account? <a href="#">Log in</a></p>
         </div>
         <footer>Made with passion by Catalin Popescu</footer>
       </div>

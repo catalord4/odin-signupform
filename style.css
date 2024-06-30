@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Kaisei+Opti&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,8 +8,8 @@
 }
 
 body {
-  padding: 0 20vw 0;
-  background-color: #ffffff;
+  padding: 0 15vw 0;
+  background-color: #dceef1;
 }
 #container {
   display: flex;
@@ -17,7 +18,7 @@ body {
 }
 
 aside {
-  width: 25vw;
+  width: 30vw;
 
   background-image: url(imgs/background-img.jpg);
   background-repeat: no-repeat;
@@ -48,7 +49,92 @@ aside {
   }
 }
 #content-container {
-  width: 35vw;
+  width: 40vw;
+  height: 100vh;
+  background-color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+main {
+  display: flex;
+  height: 70vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  h2:first-of-type {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 20px 5vw;
+  }
+
+  form {
+    margin: 40px 5vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 5vw;
+    row-gap: 2vw;
+
+    label {
+      margin-right: 5vw;
+      font-size: 0.8em;
+    }
+    input {
+      border: 1px solid rgb(195, 193, 193);
+      height: 2.2em;
+    }
+    input[type="number"] {
+      appearance: textfield;
+    }
+    input:invalid {
+      border: 1px solid red;
+    }
+    p {
+      margin-top: 5px;
+      font-size: 12px;
+      color: red;
+    }
+  }
+}
+#button-container {
+  height: 25vh;
+  padding-left: 65px;
+  button {
+    background-color: #3daabc;
+    width: 13vw;
+    height: 4.5vh;
+    border-radius: 15px;
+    border: none;
+    font-size: 1em;
+    color: white;
+  }
+  p {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: #3daabc;
+  }
+}
+footer {
+  height: 5vh;
+  width: inherit;
+  background-color: #718183;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
 }
 
 .dancing-script {
@@ -56,4 +142,27 @@ aside {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@media screen and (max-width: 1400px) {
+  body {
+    padding: 0;
+  }
+  #content-container {
+    width: 60vw;
+  }
+  aside {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #container {
+    flex-direction: column;
+  }
 }
